@@ -161,7 +161,6 @@
 				6261B4A8F37259B321A4CC2C /* Pods-AwesomeProjectRN-tvOSTests.debug.xcconfig */,
 				99705A6B1537BF67E236679C /* Pods-AwesomeProjectRN-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
