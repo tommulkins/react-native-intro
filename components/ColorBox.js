@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { View, Text } from 'react-native';
 
 /**
- * Return a React component with provided color name and hex code of color as its background color
+ * Return a component with provided color name and hex code of color as its background color
  *
  * @component
  * @example
@@ -16,6 +16,8 @@ import { View, Text } from 'react-native';
  */
 const ColorBox = props => {
   const { name, hex } = props;
+  const textColor =
+    parseInt(hex.replace('#', ''), 16) > 0xffffff / 1.1 ? 'black' : 'white';
 
   return (
     <View
@@ -31,9 +33,9 @@ const ColorBox = props => {
       ]}>
       <Text
         style={{
-          color: 'white',
+          color: textColor,
           fontWeight: 'bold',
-        }}>{`${name.charAt(0).toUpperCase() + name.slice(1)} ${hex}`}</Text>
+        }}>{`${name} ${hex}`}</Text>
     </View>
   );
 };
