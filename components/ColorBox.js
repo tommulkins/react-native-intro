@@ -28,6 +28,10 @@ const ColorBox = props => {
           padding: 10,
           alignItems: 'center',
           justifyContent: 'center',
+          shadowColor: 'black',
+          shadowOffset: { width: 0, height: 1 },
+          shadowOpacity: 0.5,
+          elevation: 3,
         },
         { backgroundColor: hex },
       ]}>
